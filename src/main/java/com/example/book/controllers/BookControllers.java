@@ -11,12 +11,12 @@ import java.util.List;
 import java.util.Optional;
 
 @Controller
-@RequestMapping(value = "/Book")
+//@RequestMapping(value = "/Book")
 public class BookControllers {
 
   @Autowired
     private BookService bookService;
-    @RequestMapping(value = "", method = RequestMethod.GET)
+    @RequestMapping(value = "/", method = RequestMethod.GET)
     public ModelAndView home(){
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("book/index");
